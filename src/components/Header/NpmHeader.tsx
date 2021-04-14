@@ -2,7 +2,7 @@ import React from "react";
 import {useTranslation} from "react-i18next";
 import TranslateButtons from "./TranslateButtons";
 import Search from "./Search";
-import {Segment, Container, Header, Icon} from "semantic-ui-react";
+import {Container, Header, Icon,Segment} from "semantic-ui-react";
 import {IconWrapper, FormWrapper} from "../../styles/ComponentStyles";
 
 const NpmHeader = () => {

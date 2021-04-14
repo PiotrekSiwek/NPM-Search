@@ -1,5 +1,7 @@
 {
   "title": "Wyszukiwarka bibliotek NPM",
   "description": "wpisz nazwę szukanej wtyczki",
-  "search": "szukaj"
+  "search": "szukaj",
+  "placeholder": "szukana biblioteka",
+  "message": "wpisz nazwę poszukiwanej biblioteki"
 }

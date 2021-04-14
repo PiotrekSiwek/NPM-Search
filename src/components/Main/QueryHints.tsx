@@ -1,6 +1,7 @@
 import React, {useContext, useState, useEffect} from "react";
 import {useQuery} from "react-query";
 import {Message, Placeholder} from "semantic-ui-react";
+import {QueryWrapper} from "../../styles/ComponentStyles";
 import {SearchedPackageContext} from "../../contexts/SearchedPackageContext";
 
 const fetchHints = async (npmName:string, numberHints:number) => {
@@ -34,9 +35,9 @@ const QueryHints = () => {
                 </Message.Header>
                 <Message.Content>
                     <Placeholder>
-                        <div style={{display:"flex", justifyContent:"space-around", marginTop:"10px"}}>
+                       <QueryWrapper>
                     {data.map((elm: any, index:number) => <span key={index}> {`${elm.word} `}</span>)}
-                        </div>
+                       </QueryWrapper>
                     </Placeholder>
                 </Message.Content>
                 </Message>

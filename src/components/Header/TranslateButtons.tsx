@@ -1,5 +1,4 @@
 import React from "react";
-
 import i18n from "i18next";
 import {Button, Flag} from "semantic-ui-react";
 
@@ -13,7 +12,7 @@ const TranslateButtons:React.FC = () => {
 
     return(
         <Button.Group>
-            <Button icon={"chevron circle down"} size={"large"} primary
+            <Button size={"large"} primary
                     onClick={changeLanguages("en")}>
                 <Flag name='gb'/>
             </Button>

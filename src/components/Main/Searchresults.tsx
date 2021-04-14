@@ -11,7 +11,6 @@ const SearchResults: FC = () => {
     const [error, setError] = useState<boolean>(false);
     const [dimmer, setDimmer] = useState(false);
 
-
     const getNpm = async () => {
         try {
             const data = await fetch(`https://registry.npmjs.org/-/v1/search?text=${npmName}`);
